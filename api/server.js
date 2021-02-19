@@ -29,6 +29,7 @@ server.post('/api/users', async (req, res) => {
 
 server.get("/api/users",(req,res)=>{
     const users = User.find()
+    // res.json(users)
     .then((users) => {
     res.status(200).json(users)
     })
