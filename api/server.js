@@ -4,6 +4,10 @@ const shortid = require("shortid")
 const User = require ("./users/model")
 const server = express()
 
+server.get("/",(req, res) =>{
+res.send({message: "Hello, welcome to backend"})
+})
+
 
 server.use(express.json())
 
